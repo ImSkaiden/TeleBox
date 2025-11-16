@@ -25,7 +25,7 @@ async def main():
     await app.start()
 
     if not app.session_string:
-        cfg.write("session_string", app.export_session_string())
+        cfg.write("session_string", await app.export_session_string())
 
     print(f"{misc.userbot_name} {misc.app_version} running")
     await idle()

@@ -1,0 +1,4 @@
+box/settings.db
+__pycache__/
+plugins/
+.cache/

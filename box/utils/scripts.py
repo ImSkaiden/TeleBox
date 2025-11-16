@@ -4,7 +4,8 @@ def preload():
     print(f"Welcome to {misc.userbot_name} ({misc.app_version})")
 
     # cfg.write("ready", False)
-    if not int(cfg.get("ready")):
+    
+    if not cfg.get("ready"):
         dirs = ["plugins", ".cache"]
 
         for d in dirs:
